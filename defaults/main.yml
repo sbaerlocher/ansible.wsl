@@ -2,3 +2,4 @@
 # defaults file for sbaerlocher.wsl
 
 wsl_enbale: false
+wsl_cron: false

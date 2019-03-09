@@ -34,6 +34,10 @@ None
 
 ## Changelog
 
+### 1.1.0
+
+* add wsl cron schedule
+
 ### 1.0.0
 
 * inital commit

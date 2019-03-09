@@ -12,13 +12,13 @@
   win_scheduled_task:
     name: Start WSL Cron
     actions:
-    - path: C:\Windows\System32\wsl.exe
-      arguments: sudo /etc/init.d/cron start
+      - path: C:\Windows\System32\wsl.exe
+        arguments: sudo /etc/init.d/cron start
     triggers:
-    - type: daily
-      start_boundary: '2019-01-01T02:00:00'
+      - type: daily
+        start_boundary: '2019-01-01T02:00:00'
     username: '{{ wsl_users }}'
     author: '{{ wsl_users }}'
     state: present
-    enabled: yes
+    enabled: true
   when: wsl_enbale and wsl_cron
